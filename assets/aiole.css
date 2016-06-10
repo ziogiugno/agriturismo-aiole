@@ -1,0 +1,173 @@
+.aiole-header {
+  position: relative;
+  background: rgb(192,192,192);
+  background: rgba(192,192,192,0.1);
+  min-height: 45px;
+}
+
+.aiole-header .mdl-layout__header-row {
+  padding: 0;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aiole-mdl-card {
+  width: 100%;
+}
+
+.mdl-layout__title {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.banner {
+  background: #F5F5F5 url(images/headerbg640w.jpg);
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 640px),
+       screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi) {
+  .banner {
+    background-image: url(images/headerbg1280w.jpg);
+  }
+}
+
+/*@media screen and (min-width: 1280px),
+       screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 640px),
+       screen and (min-resolution: 192dpi) and (min-width: 640px) {
+  .banner {
+    background-image: url(images/headerbg2560w.jpg);
+  }
+}
+*/
+.aiole-main {
+  margin-top: 5vh;
+  flex-shrink: 0;
+}
+
+.aiole-header .mdl-layout__header-row {
+  padding: 0;
+}
+
+.aiole-link {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold; 
+}
+
+.aiole-navigation-row span {
+  flex: 1 1 0;
+  font-weight: bold;
+  text-decoration: underline;
+   -moz-text-decoration-color: orange;
+    text-decoration-color: orange;  
+  color: grey;
+}
+
+.aiole-container {
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
+
+.aiole-content {
+  border-radius: 2px;
+  padding: 80px 56px;
+  margin-bottom: 80px;
+}
+
+.aiole-layout.is-small-screen .aiole-content {
+  padding: 40px 28px;
+}
+
+.mdl-mega-footer a {
+  padding-left: 40px;
+}
+
+img.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.mdl-layout__title {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.is-compact .mdl-layout__title span {
+  display: none;
+}
+
+div.mdl-card__media {
+  background-color: #fee4cb;
+}
+
+div.mdl-card {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.aiole-footer {
+  background-color: #fee4cb;
+}
+
+.aiole-container img {
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.titolo {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 50px;
+}
+
+.de {
+}
+
+.it {
+}
+
+.fr {
+}
+
+.en {
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.aiole-drawer {
+  background-color: #fee4cb;/* #c5d5cb  */
+}
+
+.aiole-drawer a {
+  color: #757575 !important;  
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;   
+}

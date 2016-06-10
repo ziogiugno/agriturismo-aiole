@@ -1,0 +1,16 @@
+# humanstxt.org/
+
+/* TEAM */
+
+    Web master/designer: Rolando Duma
+    Twitter: @ziogiugno
+    From: Pomezia, Italy
+
+/* SITE */
+	Last update:2016/06/14
+	Main Language: Italian
+	Other Languages: Deutsch / English / French
+	Standards: HTML5
+	Components: Material Design Lite
+	Software: Sublime Text, The Gimp
+	Generator: Metalsmith
