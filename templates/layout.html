@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{{description}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="author" href="humans.txt" />
+  <title>{{title}}|{{site.title}}</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Fredericka+the+Great" type="text/css">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.green-amber.min.css" />   
+  <link rel="stylesheet" href="aiole.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body class="mdl-color-text--grey-600">
+  <div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--waterfall mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row mdl-layout--large-screen-only">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+          {% if in_menu_it %}
+            {% for menu in it_pages %}
+              <a class="mdl-navigation__link aiole-link" href="{{ menu.filename }}" hreflang="{{it_pages.metadata.lang}}">
+              {{menu.title|safe}}
+              </a>
+            {% endfor %}
+          {% endif %}
+          {% if in_menu_en %}
+            {% for menu in collections.en_pages %}
+              <a class="mdl-navigation__link aiole-link" href="{{ menu.filename }}" hreflang="{{menu.lang}}">
+              {{menu.title|safe}}
+              </a>
+            {% endfor %}
+          {% endif %}
+          {% if in_menu_fr %}
+            {% for menu in collections.fr_pages %}
+              <a class="mdl-navigation__link aiole-link" href="{{ menu.filename }}" hreflang="{{menu.lang}}">
+              {{menu.title|safe}}
+              </a>
+            {% endfor %}
+          {% endif %}
+          {% if in_menu_de %}
+            {% for menu in collections.de_pages %}
+              <a class="mdl-navigation__link aiole-link" href="{{ menu.filename }}" hreflang="{{menu.lang}}">
+              {{menu.title|safe}}
+              </a>
+            {% endfor %}
+          {% endif %}
+        </nav>
+      </div>
+      <div class="mdl-layout__header-row mdl-layout--large-screen-only">
+        <span class="titolo">
+        {{site.title}}
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <a class="de" href="index.de.html" hreflang="de" alt="{{de_pages.metadata.language}}"><img src='images/de.png'/></a>
+          <a class="en" href="index.en.html" hreflang="en" alt="{{en_pages.metadata.language}}"><img src='images/en.png'/></a>
+          <a class="fr" href="index.fr.html" hreflang="fr" alt="{{fr_pages.metadata.language}}"><img src='images/fr.png'/></a>
+          <a class="it" href="index.html" hreflang="it" alt="{{it_pages.metadata.language}}"><img src='images/it.png'/></a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only aiole-drawer">
+      <span class="mdl-layout__title">{{site.title}}</span>
+      <nav class="mdl-navigation mdl-color-text--grey-600">
+          {% if in_menu_en %}
+            {% for menu in collections.en_pages %}
+              <a class="mdl-navigation__link" href="{{ menu.filename }}" hreflang="{{menu.lang}}">{{menu.title|safe}}</a>
+            {% endfor %}
+          {% endif %}
+          {% if in_menu_it %}
+            {% for menu in it_pages %}
+              <a class="mdl-navigation__link" href="{{ menu.filename }}" hreflang="{{menu.lang}}">{{menu.title|safe}}</a>
+            {% endfor %}
+          {% endif %}
+          {% if in_menu_fr %}
+            {% for menu in collections.fr_pages %}
+              <a class="mdl-navigation__link" href="{{ menu.filename }}" hreflang="{{menu.lang}}">{{menu.title|safe}}</a>
+            {% endfor %}
+          {% endif %}
+          {% if in_menu_de %}
+            {% for menu in collections.de_pages %}
+              <a class="mdl-navigation__link" href="{{ menu.filename }}" hreflang="{{menu.lang}}">{{menu.title|safe}}</a>
+            {% endfor %}
+          {% endif %}
+      </nav>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="de" href="index.de.html" hreflang="de"><img src='images/de.png'/></a>
+        <a class="en" href="index.en.html" hreflang="en"><img src='images/en.png'/></a>
+        <a class="fr" href="index.fr.html" hreflang="fr"><img src='images/fr.png'/></a>
+        <a class="it" href="index.html" hreflang="it"><img src='images/it.png'/></a>
+      </div>
+    </div>
+    <div class="banner"></div>
+    <main class="aiole-main mdl-layout__content">
+      <div class="aiole-container mdl-grid mdl-typography--body-2-force-preferred-font">
+        <div class="mdl-grid mdl-cell mdl-cell--12-col">
+          <img class="banner-image mdl-shadow--4dp" src="{{banner}}" border="0"/>
+           {% block content %}{% endblock %}
+           {% block content2 %}{% endblock %}
+        </div>
+      </div>
+      <footer class="aiole-footer mdl-mega-footer">
+        <div class="mdl-mega-footer__top-section">
+          PARTNERS:
+          <a href="http://www.montalcinoitaly.com" target="_blank"><img src="images/cesira.gif"></a>
+          <a href="http://www.gualdodelre.com" target="_blank"><img src="images/gualdodelre.gif"></a>
+          <a href="http://www.agriturismolaleggenda.it/" target="_blank"><img src="images/laleggenda.jpg"></a>
+        </div>
+        <div class="mdl-mega-footer__bottom-section">
+          <div class="mdl-mega-footer__left-section">
+            Ultima modifica: {{ date|date('d/m/Y') }}
+          </div>
+          <div class="mdl-mega-footer__right-section"> Copyright &copy; 2016   Azienda Agricola Aiole</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
