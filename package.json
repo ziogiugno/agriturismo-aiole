@@ -1,0 +1,32 @@
+{
+  "name": "aiole-metal",
+  "version": "1.0.0",
+  "description": "www.agriturismo-aiole.com website build with metalsmith",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "metalsmith": "^2.1.0",
+    "metalsmith-assets": "^0.1.0",
+    "metalsmith-build-date": "^0.2.0",
+    "metalsmith-collections": "^0.7.0",
+    "metalsmith-filenames": "^1.0.0",
+    "metalsmith-in-place": "^1.4.4",
+    "metalsmith-mapsite": "^1.0.4",
+    "metalsmith-serve": "0.0.7",
+    "metalsmith-watch": "^1.0.2",
+    "swig": "^1.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/gulp",
+    "start": "./node_modules/.bin/gulp server",
+    "debug": "DEBUG=metalsmith* ./node_modules/.bin/gulp",
+    "production": "./node_modules/.bin/gulp --production",
+    "build": "./node_modules/.bin/gulp --production --build && ./build.sh",
+    "watch": "./node_modules/.bin/gulp watch",
+    "vendor": "./node_modules/.bin/gulp vendor"
+  },
+  "author": "Rolando Duma <ziogiugno@gmail.com> (http://ziogiugno.github.io)",
+  "license": "ISC"
+}
