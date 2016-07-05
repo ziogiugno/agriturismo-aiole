@@ -12,9 +12,6 @@
     "metalsmith-collections": "^0.7.0",
     "metalsmith-filenames": "^1.0.0",
     "metalsmith-in-place": "^1.4.4",
-    "metalsmith-mapsite": "^1.0.4",
-    "metalsmith-serve": "0.0.7",
-    "metalsmith-watch": "^1.0.2",
     "swig": "^1.4.2"
   },
   "scripts": {

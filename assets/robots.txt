@@ -2,3 +2,4 @@
 
 User-agent: *
 Disallow: /images/
+Sitemap: http://www.agriturismo-aiole.com/sitemap.xml
