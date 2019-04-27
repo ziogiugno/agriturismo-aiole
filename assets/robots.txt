@@ -1,4 +1,0 @@
-# robotstxt.org/
-
-User-agent: *
-Sitemap: http://www.agriturismo-aiole.com/sitemap.xml
