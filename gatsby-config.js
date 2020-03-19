@@ -1,31 +1,28 @@
-const config = require('./data/config');
+const config = require("./data/config");
 
 module.exports = {
-	siteMetadata: {
-		site_url: config.url,
-	},
-	plugins: [
-		'gatsby-plugin-react-helmet',
-		'gatsby-plugin-styled-components',
-		'gatsby-plugin-netlify',
-		'gatsby-plugin-catch-links',
-		'gatsby-plugin-sharp',
-		'gatsby-transformer-sharp',
-		{
-			resolve: 'gatsby-plugin-google-fonts',
-			options: {
-				fonts: [
-					'Cairo',
-					'Roboto'
-				]
-			}
-		},
-		{
-			resolve: 'gatsby-plugin-canonical-urls',
-			options: {
-				siteUrl: config.url,
-			},
-		},
+  siteMetadata: {
+    site_url: config.url
+  },
+  plugins: [
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-netlify",
+    "gatsby-plugin-catch-links",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: ["Cairo", "Roboto"]
+      }
+    },
+    {
+      resolve: "gatsby-plugin-canonical-urls",
+      options: {
+        siteUrl: config.url
+      }
+    } /* ,
 		{
 			resolve: 'gatsby-plugin-google-analytics',
 			options: {
@@ -40,13 +37,13 @@ module.exports = {
 				showSpinner: false,
 			},
 		},
-		/* {
+		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: 'img',
 				path: `${__dirname}/src/images/`
 			}
-		}, */
+		}, 
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
@@ -69,7 +66,7 @@ module.exports = {
 					},
 				],
 			},
-		},
-		// 'gatsby-plugin-offline'
-	],
+		},*/
+    // 'gatsby-plugin-offline'
+  ]
 };
