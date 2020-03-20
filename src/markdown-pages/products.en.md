@@ -4,15 +4,17 @@ lang: en
 in_menu_en: true
 menu_order: 4
 banner: images/banner07.jpg
-lastupdate: 'Last update'
+lastupdate: "Last update"
 altlang_it: products.html
 altlang_fr: products.fr.html
 altlang_de: products.de.html
 altlang_en: products.en.html
 ---
+
 {% extends 'templates/layout.html' %}
 
 {% block content %}
+
 <div class="mdl-card__title">
 	<h2 class="mdl-card__title-text">Noella's cooking</h2>
 </div>
@@ -20,8 +22,7 @@ altlang_en: products.en.html
 	<img src="images/orto.jpg">
 </div>
 <div class="mdl-card__supporting-text">
-In my kitchen the essential products which form the base of my cooking come from my vegetable garden and from the nearby woods. In spring I gather grass herbs which grow on the hills around the farm and when I have time, simply because it 
-gives me so much satisfaction, I love to prepare potatoe gnocchi, or some of the many types of pasta, such as fettucine, lasagne, ravioli and pinci.For me, the very best plates are: il cinghiale, which is delicious wild boar, and il coniglio, which is tasty and tender rabbit. The sweet dishes I prepare generally serve both for dessert and breakfast, and as well as breads, tarts and cakes, I often bake traditional Italian sweets like crostate, ciambellone and pandolce.Perhaps all this talk of delicious food is making you interested in my Cookery Classes! I offer my classes to individuals, even one or two people, up to a maximum of 12 people in a small group. But whether individually or in a small group I would love to teach you the things you want to learn; we can plan the course program together to make sure you enjoy learning about fine Italian cooking which you can reproduce at home. The Cookery Course outline which I suggest below will give you an idea of the program I have found to work extremely well.I'm looking forward to showing you my garden, to cooking some delicious dinners for you, and above all to seeing you soon at Aiole.
+In my kitchen the essential products which form the base of my cooking come from my vegetable garden and from the nearby woods. In spring I gather grass herbs which grow on the hills around the farm and when I have time, simply because it gives me so much satisfaction, I love to prepare potatoe gnocchi, or some of the many types of pasta, such as fettucine, lasagne, ravioli and pinci.For me, the very best plates are: il cinghiale, which is delicious wild boar, and il coniglio, which is tasty and tender rabbit. The sweet dishes I prepare generally serve both for dessert and breakfast, and as well as breads, tarts and cakes, I often bake traditional Italian sweets like crostate, ciambellone and pandolce.Perhaps all this talk of delicious food is making you interested in my Cookery Classes! I offer my classes to individuals, even one or two people, up to a maximum of 12 people in a small group. But whether individually or in a small group I would love to teach you the things you want to learn; we can plan the course program together to make sure you enjoy learning about fine Italian cooking which you can reproduce at home. The Cookery Course outline which I suggest below will give you an idea of the program I have found to work extremely well.I'm looking forward to showing you my garden, to cooking some delicious dinners for you, and above all to seeing you soon at Aiole.
 </div>
 {% endblock %}
 {% block content2 %}
