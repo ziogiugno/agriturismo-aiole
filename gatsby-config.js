@@ -1,8 +1,6 @@
-const config = require("./data/config");
-
 module.exports = {
   siteMetadata: {
-    site_url: config.url,
+    site_url: "https://www.agriturismo-aiole.com",
     title: "Agriturismo Aiole",
     description: "Val D'Orcia Bed and Breakfast",
     author: "Ziogiugno"
@@ -14,7 +12,7 @@ module.exports = {
         // language JSON resource path
         path: `${__dirname}/src/intl`,
         // supported language
-        languages: [`en`, `it`, `fr`, `de`],
+        languages: [`it`, `en`, `fr`, `de`],
         // language file path
         defaultLanguage: `it`,
         // option to redirect to `/ko` when connecting `/`
@@ -32,13 +30,13 @@ module.exports = {
       options: {
         fonts: ["Cairo", "Roboto"]
       }
-    },
+    } /*,
     {
       resolve: "gatsby-plugin-canonical-urls",
       options: {
         siteUrl: config.url
       }
-    } /* ,
+    }  ,
 		{
 			resolve: 'gatsby-plugin-google-analytics',
 			options: {
