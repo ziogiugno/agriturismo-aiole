@@ -5572,7 +5572,7 @@ gatsby-plugin-react-helmet@^3.0.0:
   dependencies:
     "@babel/runtime" "^7.8.7"
 
-gatsby-plugin-sharp@^2.0.6:
+gatsby-plugin-sharp@^2.4.13:
   version "2.4.13"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.4.13.tgz#da47cfd8a0d80fc35b7bb072d8a84f6f4f29116d"
   integrity sha512-ogRe5CxBIBZ0R76t7F3F1ji00BO7qnTO4vZkREaSxDBwgY6SOGKT8uie497Ej6usfarc9XQ/jMnXBu5EkrT4tA==
@@ -5657,7 +5657,7 @@ gatsby-telemetry@^1.1.56:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-transformer-sharp@^2.1.3:
+gatsby-transformer-sharp@^2.3.19:
   version "2.3.19"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.3.19.tgz#a6bfc93ec9070fef9a8e97bf839ccc193fa26b0e"
   integrity sha512-V3OoG9R0k+dUcJiHoI3miHrmW2kcTj8FD4GT3XZHXmpoJNIUJ/2a78+O0m6Px/3F8EzafGo35id4fFhLePZdsw==

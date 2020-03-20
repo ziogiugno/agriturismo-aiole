@@ -1,26 +1,36 @@
-import React from 'react'
-import styled from 'styled-components'
-import { FormattedMessage } from 'react-intl'
-import { Layout, Container } from '../components/common'
-import SEO from '../components/common/SEO'
-import Header from '../components/theme/Header'
+import React from "react";
+import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl";
+import Layout from "../components/layout";
+import Image from "../components/image";
+import SEO from "../components/seo";
+import Header from "../components//header";
 
-const IndexPage = () => (
-	<Layout>
-		<React.Fragment>
-			<SEO title="welcome" />
-			<Header />
-			<Welcome as={Container}>
-				<h2>
-					<FormattedMessage id="welcome" />
-				</h2>
-			</Welcome>
-		</React.Fragment>
-	</Layout>
-)
+const IndexPage = () => {
+  const intl = useIntl();
+  return (
+    <>
+      <Header siteTitle={intl.formatMessage({ id: "index_title" })} />
+      <Layout>
+        <SEO
+          lang={intl.locale}
+          title={intl.formatMessage({ id: "index_title" })}
+          keywords={[`gatsby`, `application`, `react`]}
+        />
+        <h2>
+          <FormattedMessage id="index_block1_title" />
+        </h2>
+        <p>
+          <FormattedMessage id="index_block1_body" />
+        </p>
+        <h2>
+          <FormattedMessage id="index_block2_title" />
+        </h2>
+        <p>
+          <FormattedMessage id="index_block2_body" />
+        </p>
+      </Layout>
+    </>
+  );
+};
 
-const Welcome = styled.div`
-	padding: 2rem 0;
-`
-
-export default IndexPage
+export default IndexPage;

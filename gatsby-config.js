@@ -2,7 +2,10 @@ const config = require("./data/config");
 
 module.exports = {
   siteMetadata: {
-    site_url: config.url
+    site_url: config.url,
+    title: "Agriturismo Aiole",
+    description: "Val D'Orcia Bed and Breakfast",
+    author: "Ziogiugno"
   },
   plugins: [
     {

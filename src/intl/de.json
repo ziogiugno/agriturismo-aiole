@@ -1,7 +1,12 @@
 {
-    "welcome": "Willkommen",
-    "logo": "Logo",
-    "home": "Zuhause",
-    "about": "Über",
-    "not_found": "404 - Seite nicht gefunden"
+  "index_title": "Wilkommen / Landhaus",
+  "index_description": "Pagina di benvenuto in Agriturismo, descrizione della struttura e dei dintorni: Montalcino e Val d'Orcia",
+  "index_block1_title": "Wilkommen",
+  "index_block1_body": "Das Landhaus \"Aiole\", in der Gemarkung Castiglione d'Orcia, Kreis Poggio Rosa, liegt zentral zwischen einer Vielzahl sehensw&uuml;rdiger Orte, die durch ihre Geschichte, Kultur und Sch&ouml;nheit bekannt sind.Unweit an der Strada Provinciale della Grossola gelegen, in mitten von W&auml;ldern hat man einen freien Blick &uuml;ber das Orcia Tal (Val d'Orcia). In der Umgebung befinden sich Ortschaften wie Montalcino (ber&uuml;hmt f&uuml;r seinen \"Brunello\" Wein), Pienza, San Quirico d'Orcia, Bagno Vignoni, Montepulciano sowie verschiedene Festungen, Burgen, Schl&ouml;sser und Abteien. Das Landhaus wurde neu renoviert und im toskanischen Stil umgebaut; es entstanden 6 Doppelzimmer, alle mit WC+Dusche. Die Lage des Hauses gibt Gelegenheit zur Ruhe und Entspannung.Die R&auml;ume sind im l&auml;ndlichen Stil gehalten und bieten ein sch&ouml;nes Ambiente sowie modernen Komfort.Wir bieten Produkte aus eigener Herstellung auch zum Verkauf an.",
+  "index_block2_title": "Das Landhaus",
+  "index_block2_body": "Das Landhaus umfa&szlig;t 500 m&sup2; auf 2 Etagen verteilt - von denen ein Teil von uns privat bewohnt wird.Es bietet 6 Doppelzimmer jeweils mit Bad und WC, ein gemeinsames Wohnzimmer mit gro&szlig;em Kamin und eine K&uuml;che.Die Nutzung der K&uuml;che ist nur bei Buchung der Apartment-Variante m&ouml;glich. Die Zimmer verf&uuml;gen &uuml;ber Kleiderschrank, Tisch und Stuhl sowie 2 St&uuml;hle als Nachttische. Zwei getrennt schaltbare Wandleuchten rechts und links am Kopfende und eine zus&auml;tzliche Lampe &uuml;ber der T&uuml;r beleuchten den Raum.Die Holzfenster k&ouml;nnen durch dicke Vorh&auml;nge verdunkelt werden.Das Fr&uuml;hst&uuml;ck wird im gemeinsamen Speisesaal im Erdgescho&szlig; serviert.",
+  "notfound": {
+    "header": "404 - Nicht gefunden",
+    "description": "Sie haben gerade eine Route erreicht, die nicht existiert... die Traurigkeit."
+  }
 }
