@@ -16,18 +16,24 @@ const ProductsPage = () => {
           title={intl.formatMessage({ id: "products_title" })}
           keywords={[`gatsby`, `application`, `react`]}
         />
-        <h2>
-          <FormattedMessage id="products_block1_title" />
-        </h2>
-        <p>
-          <FormattedMessage id="products_block1_body" />
-        </p>
-        <h2>
-          <FormattedMessage id="products_block2_title" />
-        </h2>
-        <p>
-          <FormattedMessage id="products_block2_body" />
-        </p>
+        <div class="columns">
+          <div class="column">
+            <h2 class="is-size-3">
+              <FormattedMessage id="products_block1_title" />
+            </h2>
+            <p class="section">
+              <FormattedMessage id="products_block1_body" />
+            </p>
+          </div>
+          <div class="column">
+            <h2 class="is-size-3">
+              <FormattedMessage id="products_block2_title" />
+            </h2>
+            <p class="section">
+              <FormattedMessage id="products_block2_body" />
+            </p>
+          </div>
+        </div>
       </Layout>
     </>
   );

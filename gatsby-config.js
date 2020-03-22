@@ -19,8 +19,8 @@ module.exports = {
         redirect: true
       }
     },
+    `gatsby-plugin-sass`,
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-styled-components",
     "gatsby-plugin-netlify",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-sharp",
