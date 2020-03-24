@@ -27,8 +27,21 @@
   "reserve_title": "",
   "reserve_description": "",
 
-  "contacts_title": "",
-  "contacts_description": "",
+  "contacts_title": "Contatti / Informazioni",
+  "contact1": "",
+  "contact2": "",
+  "contact3": "",
+  "contact4": "",
+  "contact5": "",
+  "contact6": "",
+  "info_title": "",
+  "howto_title": "",
+  "howto1": "",
+  "howto2": "",
+  "howto3": "",
+  "howto4": "",
+  "howto5": "",
+  "howto6": "",
 
   "notfound": {
     "header": "404 - Nicht gefunden",
