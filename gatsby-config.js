@@ -3,7 +3,7 @@ module.exports = {
     site_url: "https://www.agriturismo-aiole.com",
     title: "Agriturismo Aiole",
     description: "Val D'Orcia Bed and Breakfast",
-    author: "Ziogiugno"
+    author: "Ziogiugno",
   },
   plugins: [
     {
@@ -16,21 +16,28 @@ module.exports = {
         // language file path
         defaultLanguage: `it`,
         // option to redirect to `/ko` when connecting `/`
-        redirect: true
-      }
+        redirect: true,
+      },
     },
     `gatsby-plugin-sass`,
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify",
     "gatsby-plugin-catch-links",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["Cairo", "Roboto"]
-      }
-    } /*,
+        fonts: ["Cairo", "Roboto"],
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "img",
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp" /*,
     {
       resolve: "gatsby-plugin-canonical-urls",
       options: {
@@ -50,13 +57,6 @@ module.exports = {
 				color: config.themeColor,
 				showSpinner: false,
 			},
-		},
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				name: 'img',
-				path: `${__dirname}/src/images/`
-			}
 		}, 
 		{
 			resolve: 'gatsby-plugin-manifest',
@@ -80,7 +80,7 @@ module.exports = {
 					},
 				],
 			},
-		},*/
+		},*/,
     // 'gatsby-plugin-offline'
-  ]
+  ],
 };

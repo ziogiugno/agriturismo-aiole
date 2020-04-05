@@ -1,12 +1,25 @@
 import React from "react";
-import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl";
+import { FormattedMessage, useIntl } from "gatsby-plugin-intl";
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
 import Header from "../components/header";
+import Image from "gatsby-image";
+import { graphql, useStaticQuery } from "gatsby";
 
 const ProductsPage = () => {
   const intl = useIntl();
+  const orto = useStaticQuery(graphql`
+    query OrtoQuery {
+      file(relativePath: { eq: "orto.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <>
       <Header siteTitle={intl.formatMessage({ id: "products_title" })} />
@@ -16,20 +29,22 @@ const ProductsPage = () => {
           title={intl.formatMessage({ id: "products_title" })}
           keywords={[`gatsby`, `application`, `react`]}
         />
-        <div class="columns">
-          <div class="column">
-            <h2 class="is-size-3">
+        <div className="columns">
+          <div className="column">
+            <h2 className="is-size-3">
               <FormattedMessage id="products_block1_title" />
             </h2>
-            <p class="section">
+            <p className="section">
+              <Image fluid={orto.file.childImageSharp.fluid} />
               <FormattedMessage id="products_block1_body" />
             </p>
           </div>
-          <div class="column">
-            <h2 class="is-size-3">
+          <div className="column">
+            <h2 className="is-size-3">
               <FormattedMessage id="products_block2_title" />
             </h2>
-            <p class="section">
+            <p className="section">
+              <Image fluid={orto.file.childImageSharp.fluid} />
               <FormattedMessage id="products_block2_body" />
             </p>
           </div>

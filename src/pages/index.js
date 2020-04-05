@@ -18,20 +18,45 @@ const IndexPage = () => {
         />
         <div class="columns">
           <div class="column">
-            <h2 class="is-size-3">
-              <FormattedMessage id="index_block1_title" />
-            </h2>
-            <p class="section">
-              <FormattedMessage id="index_block1_body" />
-            </p>
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <FormattedMessage id="index_block1_title" />
+                </p>
+              </header>
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://bulma.io/images/placeholders/256x256.png"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="section">
+                  <FormattedMessage id="index_block1_body" />
+                </p>
+              </div>
+            </div>
           </div>
           <div class="column">
-            <h2 class="is-size-3">
-              <FormattedMessage id="index_block2_title" />
-            </h2>
-            <p class="section">
-              <FormattedMessage id="index_block2_body" />
-            </p>
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <FormattedMessage id="index_block2_title" />
+                </p>
+              </header>
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="images/piscina.jpg" alt="" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="section">
+                  <FormattedMessage id="index_block2_body" />
+                </p>
+              </div>
+            </div>{" "}
           </div>
         </div>
       </Layout>

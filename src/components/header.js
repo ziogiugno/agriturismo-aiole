@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header>
       <div>
-        <div class="navbar nav columns">
+        <div className="navbar nav columns">
           <div className="column">
             <Link to="/">
               <FormattedMessage id="index_title" />
@@ -45,27 +45,10 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <h1 class="title is-size-1">
+        <h1 className="title is-size-1">
           <Link to="/">{data.site.siteMetadata.title}</Link>
-          <div>
-            <span>
-              <div id="TA_cdsratingsonlynarrow440">
-                <ul id="ZknVvg" class="TA_links W3twVeEH6">
-                  <li id="mf7QRMQj" class="7rM7zl1gd">
-                    <a target="_blank" href="https://www.tripadvisor.it/">
-                      <img
-                        src="https://www.tripadvisor.it/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png"
-                        alt="TripAdvisor"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <script src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=440&amp;locationId=2334152&amp;lang=it&amp;border=true&amp;display_version=2"></script>
-            </span>
-          </div>
         </h1>
-        <div class="navbar">
+        <div className="navbar">
           <Language />
         </div>
       </div>
@@ -74,11 +57,11 @@ const Header = () => {
 };
 
 Header.propTypes = {
-  siteTitle: PropTypes.string
+  siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {
-  siteTitle: ``
+  siteTitle: ``,
 };
 
 export default Header;

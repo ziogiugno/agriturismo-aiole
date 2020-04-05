@@ -7,10 +7,10 @@ const Layout = ({ children, intl }) => {
   return (
     <div>
       <main>{children}</main>
-      <footer class="footer">
+      <footer className="footer">
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a class="link" href="https://www.gatsbyjs.org">
+        <a className="link" href="https://www.gatsbyjs.org">
           Gatsby
         </a>
       </footer>
@@ -19,7 +19,7 @@ const Layout = ({ children, intl }) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default injectIntl(Layout);
