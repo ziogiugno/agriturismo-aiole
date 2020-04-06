@@ -1,12 +1,39 @@
 import React from "react";
 import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl";
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
 import Header from "../components//header";
+import Image from "gatsby-image";
+import { graphql, useStaticQuery } from "gatsby";
 
 const IndexPage = () => {
   const intl = useIntl();
+  const images = useStaticQuery(graphql`
+    query {
+      banner: file(relativePath: { eq: "banner03.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      img1: file(relativePath: { eq: "piscina.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      img2: file(relativePath: { eq: "casale2.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <>
       <Header siteTitle={intl.formatMessage({ id: "index_title" })} />
@@ -16,47 +43,50 @@ const IndexPage = () => {
           title={intl.formatMessage({ id: "index_title" })}
           keywords={[`gatsby`, `application`, `react`]}
         />
-        <div class="columns">
-          <div class="column">
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <FormattedMessage id="index_block1_title" />
-                </p>
-              </header>
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img
-                    src="https://bulma.io/images/placeholders/256x256.png"
-                    alt="Placeholder image"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <p class="section">
-                  <FormattedMessage id="index_block1_body" />
-                </p>
+        <div className="container">
+          {/*           <section className="hero">
+            <Image fluid={images.banner.childImageSharp.fluid} />
+          </section>
+ */}{" "}
+          <div className="columns">
+            <div className="column">
+              <div className="card">
+                <header className="card-header">
+                  <p className="card-header-title is-size-4">
+                    <FormattedMessage id="index_block1_title" />
+                  </p>
+                </header>
+                <div className="card-image">
+                  <figure className="image">
+                    <Image fluid={images.img1.childImageSharp.fluid} />
+                  </figure>
+                </div>
+                <div className="card-content">
+                  <p className="section">
+                    <FormattedMessage id="index_block1_body" />
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <FormattedMessage id="index_block2_title" />
-                </p>
-              </header>
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="images/piscina.jpg" alt="" />
-                </figure>
+            <div className="column">
+              <div className="card">
+                <header className="card-header">
+                  <p className="card-header-title">
+                    <FormattedMessage id="index_block2_title" />
+                  </p>
+                </header>
+                <div className="card-image">
+                  <figure className="image">
+                    <Image fluid={images.img2.childImageSharp.fluid} />
+                  </figure>
+                </div>
+                <div className="card-content">
+                  <p className="section">
+                    <FormattedMessage id="index_block2_body" />
+                  </p>
+                </div>
               </div>
-              <div class="card-content">
-                <p class="section">
-                  <FormattedMessage id="index_block2_body" />
-                </p>
-              </div>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </Layout>

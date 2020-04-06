@@ -33,7 +33,6 @@ const ProductsPage = () => {
       }
     }
   `);
-  console.log(images);
   return (
     <>
       <Header siteTitle={intl.formatMessage({ id: "products_title" })} />
@@ -43,27 +42,49 @@ const ProductsPage = () => {
           title={intl.formatMessage({ id: "products_title" })}
           keywords={[`gatsby`, `application`, `react`]}
         />
-        <section className="hero">
-          <Image fluid={images.banner.childImageSharp.fluid} />
-        </section>
-        <div className="columns">
-          <div className="column">
-            <h2 className="is-size-3">
-              <FormattedMessage id="products_block1_title" />
-            </h2>
-            <Image fluid={images.img1.childImageSharp.fluid} />
-            <p className="section">
-              <FormattedMessage id="products_block1_body" />
-            </p>
-          </div>
-          <div className="column">
-            <h2 className="is-size-3">
-              <FormattedMessage id="products_block2_title" />
-            </h2>
-            <Image fluid={images.img2.childImageSharp.fluid} />
-            <p className="section">
-              <FormattedMessage id="products_block2_body" />
-            </p>
+        <div className="container">
+          {/*           <section className="hero">
+            <Image fluid={images.banner.childImageSharp.fluid} />
+          </section> */}
+          <div className="columns">
+            <div className="column">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <FormattedMessage id="products_block1_title" />
+                  </p>
+                </header>
+                <div class="card-image">
+                  <figure class="image">
+                    <Image fluid={images.img1.childImageSharp.fluid} />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="section">
+                    <FormattedMessage id="products_block1_body" />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="column">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <FormattedMessage id="products_block2_title" />
+                  </p>
+                </header>
+                <div class="card-image">
+                  <figure class="image">
+                    <Image fluid={images.img2.childImageSharp.fluid} />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <p class="section">
+                    <FormattedMessage id="products_block2_body" />
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Layout>

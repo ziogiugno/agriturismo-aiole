@@ -1,9 +1,10 @@
 import React from "react";
 import { FormattedMessage, Link, useIntl } from "gatsby-plugin-intl";
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
 import Header from "../components/header";
+import Image from "gatsby-image";
+import { graphql, useStaticQuery } from "gatsby";
 
 const AccomodationsPage = () => {
   const intl = useIntl();

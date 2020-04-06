@@ -4,7 +4,11 @@
 // $title-color: #ff0000;
 // $primary: #fce38a;
 // $purple: #fce38a;
-// $body-background-color: #eaffd0;
-// $footer-background-color: #95e1d3;
+$body-background-color: AntiqueWhite;
+// $footer-background-color: DimGray;
 
 @import "~bulma/bulma.sass";
+
+main {
+  padding-bottom: 1rem;
+}
