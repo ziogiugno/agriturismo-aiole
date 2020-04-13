@@ -52,7 +52,7 @@ const IndexPage = () => {
             <div className="column">
               <div className="card">
                 <header className="card-header">
-                  <p className="card-header-title is-size-4">
+                  <p className="card-header-title">
                     <FormattedMessage id="index_block1_title" />
                   </p>
                 </header>
