@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import Header from "../components/header";
 import Image from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
+import Skype from "../images/skype-line.svg";
 
 const ContactsPage = () => {
   const intl = useIntl();
@@ -61,8 +62,25 @@ const ContactsPage = () => {
                 </div>
                 <div class="card-content">
                   <p class="section">
-                    <FormattedMessage id="contacs_block1_body" />
+                    <FormattedMessage id="contacts_block1_body" />
                   </p>
+                  <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-32x32">
+                        <img src={Skype} alt="Skype icon" />
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <h6>Skype</h6>agriturismo.aiole
+                        </p>
+                      </div>
+                    </div>
+                    <div class="media-right">
+                      <button>Vai!</button>
+                    </div>
+                  </article>
                 </div>
               </div>
             </div>
@@ -80,7 +98,7 @@ const ContactsPage = () => {
                 </div>
                 <div class="card-content">
                   <p class="section">
-                    <FormattedMessage id="contacs_block2_body" />
+                    <FormattedMessage id="contacts_block2_body" />
                   </p>
                 </div>
               </div>

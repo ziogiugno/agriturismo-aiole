@@ -36,7 +36,7 @@ const IndexPage = () => {
 
   return (
     <>
-      <Header siteTitle={intl.formatMessage({ id: "index_title" })} />
+      <Header siteTitle={intl.formatMessage({ id: "index_title" })}></Header>
       <Layout>
         <SEO
           lang={intl.locale}
@@ -44,10 +44,11 @@ const IndexPage = () => {
           keywords={[`gatsby`, `application`, `react`]}
         />
         <div className="container">
-          {/*           <section className="hero">
-            <Image fluid={images.banner.childImageSharp.fluid} />
+          <section className="hero">
+            <div class="hero-body">
+              <Image fluid={images.banner.childImageSharp.fluid} />
+            </div>
           </section>
- */}{" "}
           <div className="columns">
             <div className="column">
               <div className="card">
