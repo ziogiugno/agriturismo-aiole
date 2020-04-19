@@ -61,7 +61,7 @@ const ContactsPage = () => {
                   </figure>
                 </div>
                 <div class="card-content">
-                  <p class="section">
+                  <p>
                     <FormattedMessage id="contacts_block1_body" />
                   </p>
                   <article class="media">

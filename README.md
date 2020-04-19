@@ -4,7 +4,7 @@
 
 - [ ] complete i18n json files
 - [ ] complete base pages
-- [ ] implement language selection
+- [ x] implement language selection
 - [ ] add banner images
 - [ ] implement toggle mobile menu
 - [ ] add PWA features

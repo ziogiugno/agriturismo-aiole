@@ -1,6 +1,6 @@
 import React from "react";
 import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl";
-import Image from "gatsby-image";
+import Img from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
 
 const languageName = {
@@ -11,33 +11,33 @@ const languageName = {
 };
 
 const Language = () => {
-  const images = useStaticQuery(graphql`
-    query {
-      de: file(relativePath: { eq: "banner07.jpg" }) {
+  const data = useStaticQuery(graphql`
+    query LanguageQuery {
+      itFlag: file(relativePath: { eq: "italy.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+          fixed(width: 32, height: 16) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
-      en: file(relativePath: { eq: "orto.jpg" }) {
+      frFlag: file(relativePath: { eq: "france.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+          fixed(width: 32, height: 16) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
-      fr: file(relativePath: { eq: "prodotti.jpg" }) {
+      enFlag: file(relativePath: { eq: "great_britain.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+          fixed(width: 32, height: 16) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
-      it: file(relativePath: { eq: "prodotti.jpg" }) {
+      deFlag: file(relativePath: { eq: "germany.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+          fixed(width: 32, height: 16) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -47,13 +47,22 @@ const Language = () => {
   return (
     <div>
       <IntlContextConsumer>
-        {({ languages, language: currentLocale }) =>
-          languages.map((language) => (
-            <a key={language} onClick={() => changeLocale(language)}>
-              <Image fluid={"images." + language + ".childImageSharp.fluid"} />
+        {({ languages, language: currentLocale }) => (
+          <>
+            <a key="de" onClick={() => changeLocale("de")}>
+              <Img fixed={data.deFlag.childImageSharp.fixed} />
             </a>
-          ))
-        }
+            <a key="en" onClick={() => changeLocale("en")}>
+              <Img fixed={data.enFlag.childImageSharp.fixed} />
+            </a>
+            <a key="fr" onClick={() => changeLocale("fr")}>
+              <Img fixed={data.frFlag.childImageSharp.fixed} />
+            </a>
+            <a key="it" onClick={() => changeLocale("it")}>
+              <Img fixed={data.itFlag.childImageSharp.fixed} />
+            </a>
+          </>
+        )}
       </IntlContextConsumer>
     </div>
   );
