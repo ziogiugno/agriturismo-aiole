@@ -23,7 +23,6 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     "gatsby-plugin-react-helmet",
-    // "gatsby-plugin-netlify",
     "gatsby-plugin-catch-links",
     {
       resolve: "gatsby-plugin-google-fonts",
@@ -63,9 +62,10 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Gatsby",
-        short_name: "Gatsby",
-        start_url: "/",
+        name: "Agriturismo Aiole",
+        short_name: "B&B Aiole",
+        start_url: "/it",
+        lang: "it",
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: "minimal-ui",
@@ -79,6 +79,29 @@ module.exports = {
             src: "/favicon/logo-512x512.png",
             sizes: "512x512",
             type: "image/png",
+          },
+        ],
+        localize: [
+          {
+            start_url: `/de/`,
+            lang: `de`,
+            name: `Die coole Anwendung`,
+            short_name: `Coole Anwendung`,
+            description: `Die Anwendung macht coole Dinge und macht Ihr Leben besser.`,
+          },
+          {
+            start_url: `/en/`,
+            lang: `en`,
+            name: `Die coole Anwendung`,
+            short_name: `Coole Anwendung`,
+            description: `Die Anwendung macht coole Dinge und macht Ihr Leben besser.`,
+          },
+          {
+            start_url: `/fr/`,
+            lang: `fr`,
+            name: `Die coole Anwendung`,
+            short_name: `Coole Anwendung`,
+            description: `Die Anwendung macht coole Dinge und macht Ihr Leben besser.`,
           },
         ],
       },

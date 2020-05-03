@@ -23,15 +23,17 @@ const Header = () => {
           <h2 className="subtitle">
             <Language />
           </h2>
-          <h1 className="title is-size-2">{data.site.siteMetadata.title}</h1>
+          <h1 className="title is-size-2 is-italic has-text-grey">
+            {data.site.siteMetadata.title}
+          </h1>
         </div>
       </div>
       <div className="hero-body"></div>
       <div className="hero-foot">
-        <nav className="tabs has-background-primary ">
+        <nav className="tabs has-background-primary opaco has-text-weight-semibold">
           <div className="container">
             <ul className="">
-              <li className="is-active">
+              <li className="">
                 <Link to="/" className="navbar-item">
                   <FormattedMessage id="index_title" />
                 </Link>

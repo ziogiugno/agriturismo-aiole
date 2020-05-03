@@ -27,8 +27,6 @@ const IndexPage = () => {
     }
   `);
 
-  console.log(foto);
-
   return (
     <>
       <Header siteTitle={intl.formatMessage({ id: "index_title" })}></Header>
@@ -43,7 +41,7 @@ const IndexPage = () => {
             <div className="column">
               <div className="card">
                 <header className="card-header">
-                  <p className="card-header-title">
+                  <p className="card-header-title has-text-grey">
                     <FormattedMessage id="index_block1_title" />
                   </p>
                 </header>
@@ -62,7 +60,7 @@ const IndexPage = () => {
             <div className="column">
               <div className="card">
                 <header className="card-header">
-                  <p className="card-header-title">
+                  <p className="card-header-title has-text-grey">
                     <FormattedMessage id="index_block2_title" />
                   </p>
                 </header>

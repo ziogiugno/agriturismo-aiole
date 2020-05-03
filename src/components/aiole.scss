@@ -61,3 +61,24 @@ main {
 nav-opaco {
   opacity: 0.5;
 }
+
+a.navbar-item {
+  padding: 8px 8px;
+}
+
+a.navbar-item:hover {
+  background-color: #ffd503;
+}
+
+main {
+  width: 900px;
+  margin: auto;
+}
+
+.opaco {
+  opacity: 0.7;
+}
+
+.margin-small {
+  margin-bottom: 5px;
+}

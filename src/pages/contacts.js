@@ -6,6 +6,10 @@ import Header from "../components/header";
 import Image from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
 import Skype from "../images/skype-line.svg";
+import Smart from "../images/smartphone-line.svg";
+import Phone from "../images/phone-line.svg";
+import Plane from "../images/send-plane-line.svg";
+import Msg from "../images/messenger-line.svg";
 
 const ContactsPage = () => {
   const intl = useIntl();
@@ -49,56 +53,164 @@ const ContactsPage = () => {
           </section> */}
           <div className="columns">
             <div className="column">
-              <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">
+              <div className="card">
+                <header className="card-header">
+                  <p className="card-header-title has-text-grey">
                     <FormattedMessage id="info_title" />
                   </p>
                 </header>
-                <div class="card-image">
-                  <figure class="image">
+                <div className="card-image">
+                  <figure className="image">
                     <Image fluid={images.img1.childImageSharp.fluid} />
                   </figure>
                 </div>
-                <div class="card-content">
-                  <p>
+                <div className="card-content">
+                  <h1 className="is-size-5">
                     <FormattedMessage id="contacts_block1_body" />
-                  </p>
-                  <article class="media">
-                    <figure class="media-left">
-                      <p class="image is-32x32">
-                        <img src={Skype} alt="Skype icon" />
-                      </p>
+                  </h1>
+                  <article className="media">
+                    <figure className="media-left">
+                      <p className="image is-32x32"></p>
                     </figure>
-                    <div class="media-content">
-                      <div class="content">
+                    <div className="media-content">
+                      <div className="content">
                         <p>
-                          <h6>Skype</h6>agriturismo.aiole
+                          <b>Agriturismo Aiole</b>
+                          <br />
+                          s.p. 22 della Grossola 53023 Castiglione d'Orcia
+                          (Siena) ITALY
                         </p>
                       </div>
                     </div>
-                    <div class="media-right">
-                      <button>Vai!</button>
+                  </article>
+                  <article className="media">
+                    <figure className="media-left">
+                      <p className="image is-32x32">
+                        <img src={Phone} alt="Phone icon" />
+                      </p>
+                    </figure>
+                    <div className="media-content">
+                      <div className="content">
+                        <p>
+                          <b>Telefono: </b>
+                          <br />
+                          +39 0577 887454
+                        </p>
+                      </div>
+                    </div>
+                    <div className="media-right">
+                      <a
+                        className="button is-primary"
+                        href="call:+390577887454"
+                      >
+                        <img src={Phone} alt="Phone" />
+                      </a>
+                    </div>
+                  </article>
+                  <article className="media">
+                    <figure className="media-left">
+                      <p className="image is-32x32">
+                        <img src={Plane} alt="Plane icon" />
+                      </p>
+                    </figure>
+                    <div className="media-content">
+                      <div className="content">
+                        <p>
+                          <b>E-Mail: </b>
+                          <br />
+                          aiole@agriturisno-aiole.com
+                          <br />
+                          agriturismoaiole@alice.it
+                        </p>
+                      </div>
+                    </div>
+                    <div className="media-right">
+                      <a
+                        className="button is-primary"
+                        href="mailto:aiole@agriturismo-aiole.com"
+                      >
+                        <img src={Plane} alt="E-Mail" />
+                      </a>
+                    </div>
+                  </article>
+                  <article className="media">
+                    <figure className="media-left">
+                      <p className="image is-32x32">
+                        <img src={Smart} alt="SMart icon" />
+                      </p>
+                    </figure>
+                    <div className="media-content">
+                      <div className="content">
+                        <p>
+                          <b>Mobile: </b>
+                          <br />
+                          +39 334 297 1968
+                          <br />
+                          +39 339 358 6429
+                        </p>
+                      </div>
+                    </div>
+                    <div className="media-right">
+                      <a className="button is-primary" href="">
+                        <img src={Msg} alt="Msg chat" />
+                      </a>
+                    </div>
+                  </article>
+                  <article className="media">
+                    <figure className="media-left">
+                      <p className="image is-32x32">
+                        <img src={Skype} alt="Skype icon" />
+                      </p>
+                    </figure>
+                    <div className="media-content">
+                      <div className="content">
+                        <p>
+                          <b>Skype: </b>
+                          <br />
+                          agriturismo.aiole
+                        </p>
+                      </div>
+                    </div>
+                    <div className="media-right">
+                      <a
+                        className="button is-primary"
+                        href="skype:agriturismo.aiole?chat"
+                      >
+                        <img src={Skype} alt="Skype chat" />
+                      </a>
                     </div>
                   </article>
                 </div>
               </div>
             </div>
             <div className="column">
-              <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">
-                    <FormattedMessage id="howto_title" />
+              <div className="card">
+                <header className="card-header">
+                  <p className="card-header-title has-text-grey">
+                    <FormattedMessage id="info_title" />
                   </p>
                 </header>
-                <div class="card-image">
-                  <figure class="image">
+                <div className="card-image">
+                  <figure className="image">
                     <Image fluid={images.img2.childImageSharp.fluid} />
                   </figure>
                 </div>
-                <div class="card-content">
-                  <p class="section">
-                    <FormattedMessage id="contacts_block2_body" />
+                <div className="card-content">
+                  <p className="section">
+                    <FormattedMessage id="howto_title" />
+                  </p>
+                  <p>
+                    <FormattedMessage id="howto1" />
+                    <a
+                      className="button is-primary"
+                      href="https://goo.gl/maps/UHcYoUZDKX92"
+                      target="_blank"
+                    >
+                      <img src={Skype} alt="Skype chat" />
+                    </a>
+                  </p>
+                  <p>
+                    <FormattedMessage id="howto2" />
                   </p>
                 </div>
               </div>
