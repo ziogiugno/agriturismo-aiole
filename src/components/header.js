@@ -45,7 +45,7 @@ const Header = () => {
               </li>
               <li>
                 <Link to="/reservations/" className="navbar-item">
-                  <FormattedMessage id="reserve_title" />
+                  <FormattedMessage id="reservations_title" />
                 </Link>
               </li>
               <li>

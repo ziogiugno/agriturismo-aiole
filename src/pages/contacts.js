@@ -10,6 +10,7 @@ import Smart from "../images/smartphone-line.svg";
 import Phone from "../images/phone-line.svg";
 import Plane from "../images/send-plane-line.svg";
 import Msg from "../images/messenger-line.svg";
+import Maps from "../images/maps-globe.svg";
 
 const ContactsPage = () => {
   const intl = useIntl();
@@ -118,7 +119,7 @@ const ContactsPage = () => {
                         <p>
                           <b>E-Mail: </b>
                           <br />
-                          aiole@agriturisno-aiole.com
+                          aiole@agriturismo-aiole.com
                           <br />
                           agriturismoaiole@alice.it
                         </p>
@@ -196,21 +197,21 @@ const ContactsPage = () => {
                   </figure>
                 </div>
                 <div className="card-content">
-                  <p className="section">
+                  <h1 className="is-size-5">
                     <FormattedMessage id="howto_title" />
-                  </p>
+                  </h1>
                   <p>
                     <FormattedMessage id="howto1" />
+                  </p>
+                  <p>
+                    <FormattedMessage id="howto2" />
                     <a
                       className="button is-primary"
                       href="https://goo.gl/maps/UHcYoUZDKX92"
                       target="_blank"
                     >
-                      <img src={Skype} alt="Skype chat" />
+                      <img src={Maps} alt="Google Maps" />
                     </a>
-                  </p>
-                  <p>
-                    <FormattedMessage id="howto2" />
                   </p>
                 </div>
               </div>
