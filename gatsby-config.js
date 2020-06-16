@@ -4,11 +4,23 @@ module.exports = {
   siteMetadata: {
     site_url: config.url,
     title: config.title,
-    description: "Val D'Orcia Bed and Breakfast",
+    description: "Val d'Orcia Bed and Breakfast",
     author: "Ziogiugno",
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Material Icons`,
+          },
+        ],
+      },
       resolve: `gatsby-plugin-intl`,
       options: {
         // language JSON resource path

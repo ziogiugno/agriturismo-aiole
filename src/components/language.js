@@ -15,28 +15,28 @@ const Language = () => {
     query LanguageQuery {
       itFlag: file(relativePath: { eq: "italy.png" }) {
         childImageSharp {
-          fixed(width: 32, height: 16) {
+          fixed(width: 40, height: 22) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       frFlag: file(relativePath: { eq: "france.png" }) {
         childImageSharp {
-          fixed(width: 32, height: 16) {
+          fixed(width: 40, height: 22) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       enFlag: file(relativePath: { eq: "great_britain.png" }) {
         childImageSharp {
-          fixed(width: 32, height: 16) {
+          fixed(width: 40, height: 22) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       deFlag: file(relativePath: { eq: "germany.png" }) {
         childImageSharp {
-          fixed(width: 32, height: 16) {
+          fixed(width: 40, height: 22) {
             ...GatsbyImageSharpFixed
           }
         }

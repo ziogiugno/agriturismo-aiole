@@ -8,98 +8,143 @@ import { graphql, useStaticQuery } from "gatsby";
 
 const ReservationsPage = () => {
   const intl = useIntl();
-  const images = useStaticQuery(graphql`
+  const foto = useStaticQuery(graphql`
     query {
-      banner: file(relativePath: { eq: "banner07.jpg" }) {
+      banner: file(relativePath: { eq: "banner08.jpg" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       img1: file(relativePath: { eq: "aiole.jpg" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       img2: file(relativePath: { eq: "tramonto.jpg" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
     }
   `);
+
   return (
     <>
-      <Header siteTitle={intl.formatMessage({ id: "reservations_title" })} />
+      <SEO
+        lang={intl.locale}
+        title={intl.formatMessage({ id: "accomo_title" })}
+        keywords={[`gatsby`, `application`, `react`]}
+      />
+      <Header siteTitle={intl.formatMessage({ id: "reserve_title" })}></Header>
       <Layout>
-        <SEO
-          lang={intl.locale}
-          title={intl.formatMessage({ id: "reservations_title" })}
-          keywords={[`gatsby`, `application`, `react`]}
-        />
-        <div className="container">
-          {/*           <section className="hero">
-            <Image fluid={images.banner.childImageSharp.fluid} />
-          </section> */}
-          <div className="columns">
-            <div className="column">
-              <div class="card">
-                <header class="card-header">
-                  <p class="is-size-5 card-header-title">
-                    <FormattedMessage id="reservations_block1_title" />
-                  </p>
-                </header>
-                <div class="card-image">
-                  <figure class="image">
-                    <Image fluid={images.img1.childImageSharp.fluid} />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <h1 className="is-size-3">Camera Matrimoniale</h1>
-                  <ul>
-                    <li>
-                      <h6>PREZZO GIORNALIERO/SETTIMANALE</h6>
-                    </li>
-                    <li>
-                      <h6>PREZZO GIORNALIERO/SETTIMANALE STANZA USO SINGOLO</h6>
-                    </li>
-                    <li>
-                      <h6>
-                        PREZZO GIORNALIERO/SETTIMANALE STANZA 3 POSTI LETTO
-                      </h6>
-                    </li>
-                    <li>
-                      <h6>
-                        PREZZO GIORNALIERO/SETTIMANALE STANZA 4 POSTI LETTO
-                      </h6>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        <div className="mdl-grid mdl-typography--body-2-force-preferred-font">
+          <div className="mdl-cell mdl-cell--12-col">
+            <Image fluid={foto.banner.childImageSharp.fluid} />
+          </div>
+          <div className="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+            <div className="mdl-card__title">
+              <h2 className="mdl-card__title-text">
+                <FormattedMessage id="reservations_block1_title" />
+              </h2>
             </div>
-            <div className="column">
-              <div class="card">
-                <header class="card-header">
-                  <p class="is-size-5 card-header-title">
-                    <FormattedMessage id="reservations_block2_title" />
-                  </p>
-                </header>
-                <div class="card-image">
-                  <figure class="image">
-                    <Image fluid={images.img2.childImageSharp.fluid} />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <p class="section">
-                    <FormattedMessage id="reservations_block2_body" />
-                  </p>
-                </div>
-              </div>
+            <div className="mdl-card__media">
+              <Image fluid={foto.img1.childImageSharp.fluid} />
+            </div>
+            <div className="mdl-card__supporting-text">
+              <h4>
+                <FormattedMessage id="reservations_block1_body" />
+              </h4>
+              <ul className="mdl-list">
+                <li className="mdl-list__item mdl-list__item--three-line">
+                  <span className="mdl-list__item-primary-content">
+                    <span>
+                      <FormattedMessage id="reservations_block1_txt1" />
+                    </span>
+                    <span className="mdl-list__item-text-body">
+                      <a
+                        className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                        href="contacts.html"
+                        hreflang="it"
+                      >
+                        CONTATTACI!
+                      </a>
+                    </span>
+                  </span>
+                </li>
+                <li className="mdl-list__item mdl-list__item--three-line">
+                  <span className="mdl-list__item-primary-content">
+                    <span>
+                      <FormattedMessage id="reservations_block1_txt2" />
+                    </span>
+                    <span className="mdl-list__item-text-body">
+                      <a
+                        className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                        href="contacts.html"
+                        hreflang="it"
+                      >
+                        CONTATTACI!
+                      </a>
+                    </span>
+                  </span>
+                </li>
+                <li className="mdl-list__item mdl-list__item--three-line">
+                  <span className="mdl-list__item-primary-content">
+                    <span>
+                      <FormattedMessage id="reservations_block1_txt3" />
+                    </span>
+                    <span className="mdl-list__item-text-body">
+                      <a
+                        className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                        href="contacts.html"
+                        hreflang="it"
+                      >
+                        CONTATTACI!
+                      </a>
+                    </span>
+                  </span>
+                </li>
+                <li className="mdl-list__item mdl-list__item--three-line">
+                  <span className="mdl-list__item-primary-content">
+                    <span>
+                      <FormattedMessage id="reservations_block1_txt4" />
+                    </span>
+                    <span className="mdl-list__item-text-body">
+                      <a
+                        className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                        href="contacts.html"
+                        hreflang="it"
+                      >
+                        CONTATTACI!
+                      </a>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+              <h4>
+                <FormattedMessage id="reservations_block1_txt5" />
+              </h4>
+              <h4>
+                <FormattedMessage id="reservations_block1_txt6" />
+              </h4>
+            </div>
+          </div>
+          <div className="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+            <div className="mdl-card__title">
+              <h2 className="mdl-card__title-text">
+                <FormattedMessage id="reservations_block2_title" />
+              </h2>
+            </div>
+            <div className="mdl-card__media">
+              <Image fluid={foto.img2.childImageSharp.fluid} />
+            </div>
+            <div className="mdl-card__supporting-text">
+              <FormattedMessage id="reservations_block2_body" />
             </div>
           </div>
         </div>
