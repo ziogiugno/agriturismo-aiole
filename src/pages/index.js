@@ -10,13 +10,6 @@ const IndexPage = () => {
   const intl = useIntl();
   const foto = useStaticQuery(graphql`
     query {
-      banner: file(relativePath: { eq: "banner03.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
       img1: file(relativePath: { eq: "piscina.jpg" }) {
         childImageSharp {
           fluid {
@@ -43,9 +36,6 @@ const IndexPage = () => {
       />
       <Header siteTitle={intl.formatMessage({ id: "index_title" })}></Header>
       <Layout>
-        <div className="mdl-cell mdl-cell--12-col">
-          <Image fluid={foto.banner.childImageSharp.fluid} />
-        </div>
         <div className="mdl-grid mdl-typography--body-2-force-preferred-font">
           <div className="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
             <div className="mdl-card__title">

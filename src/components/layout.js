@@ -4,7 +4,12 @@ import { injectIntl } from "gatsby-plugin-intl";
 import "./aiole.css";
 
 const Layout = ({ children, intl }) => {
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+      <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    </>
+  );
 };
 
 Layout.propTypes = {
