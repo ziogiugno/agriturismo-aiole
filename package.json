@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Ismail Ghallou <ismai23l@hotmail.com>",
   "dependencies": {
-    "bulma": "^0.8.0",
+    "bulma": "^0.9.1",
     "formik": "^2.1.4",
     "gatsby": "^2.0.0",
     "gatsby-cli": "^2.12.51",
@@ -20,7 +20,7 @@
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sass": "^2.2.0",
+    "gatsby-plugin-sass": "^3.1.0",
     "gatsby-plugin-sharp": "^2.4.13",
     "gatsby-source-filesystem": "^2.0.1",
     "gatsby-transformer-sharp": "^2.3.19",
